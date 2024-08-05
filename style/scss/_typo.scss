@@ -1,0 +1,19 @@
+@mixin title-1 {
+  font-family: "Alata";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: px-rem(40px);
+  letter-spacing: 0.05em;
+}
+
+@mixin title-2 {
+  font-family: "Alata";
+  font-weight: 400;
+  font-size: px-rem(36px);
+}
+
+@mixin text-cursive {
+  font-family: "Allura";
+  font-weight: 400;
+  font-size: px-rem(40px);
+}

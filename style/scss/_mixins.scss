@@ -1,0 +1,10 @@
+$spacing-1: 80px;
+$spacing-2: 40px;
+
+@mixin mbottom-1 {
+  margin-bottom: $spacing-1;
+}
+
+@mixin mbottom-2 {
+  margin-bottom: $spacing-2;
+}

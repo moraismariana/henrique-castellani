@@ -1,0 +1,147 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 7rem;
+}
+
+body {
+  margin: 0px;
+  font-family: "Figtree", Arial, Helvetica, sans-serif;
+  background-color: #e3e3e3;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* container */
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-bg {
+  top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 40, 40, 0.77);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.header-bg .header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header-bg .header ul {
+  display: flex;
+  gap: 36px;
+}
+
+.intro-bg {
+  background-image: url("../../../img/sections/intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-bottom: 80px;
+}
+
+.intro {
+  color: #fff;
+  margin-top: 40vh;
+  text-align: center;
+  max-width: fit-content;
+  position: relative;
+}
+
+.intro h1 {
+  font-family: "Alata";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+.intro h2 {
+  font-family: "Allura";
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #fff;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #fff;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#sobre {
+  text-align: center;
+}
+
+#sobre h2 {
+  font-family: "Alata";
+  font-weight: 400;
+  font-size: 2.25rem;
+  margin-bottom: 40px;
+}

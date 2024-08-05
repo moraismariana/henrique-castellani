@@ -1,0 +1,7 @@
+#sobre {
+  text-align: center;
+  h2 {
+    @include title-2;
+    @include mbottom-2;
+  }
+}
