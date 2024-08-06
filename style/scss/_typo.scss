@@ -17,3 +17,9 @@
   font-weight: 400;
   font-size: px-rem(40px);
 }
+
+@mixin text-1 {
+  font-family: "Figtree";
+  font-weight: 400;
+  font-size: px-rem(18px);
+}

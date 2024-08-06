@@ -1,0 +1,36 @@
+#portfolio {
+  @include mbottom-1;
+  h2 {
+    @include title-2;
+    @include mbottom-2;
+    text-align: center;
+  }
+  .portfolio-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+      "img1 img2 img3"
+      "img1 img4 img4";
+
+    img:nth-child(1) {
+      grid-area: img1;
+    }
+    img:nth-child(2) {
+      grid-area: img2;
+    }
+    img:nth-child(3) {
+      grid-area: img3;
+    }
+    img:nth-child(4) {
+      grid-area: img4;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
