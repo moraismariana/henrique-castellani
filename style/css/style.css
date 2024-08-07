@@ -212,19 +212,19 @@ img {
   grid-template-areas: "img1 img2 img3" "img1 img4 img4";
 }
 
-#portfolio .portfolio-grid img:nth-child(1) {
+#portfolio .portfolio-grid div:nth-child(1) {
   grid-area: img1;
 }
 
-#portfolio .portfolio-grid img:nth-child(2) {
+#portfolio .portfolio-grid div:nth-child(2) {
   grid-area: img2;
 }
 
-#portfolio .portfolio-grid img:nth-child(3) {
+#portfolio .portfolio-grid div:nth-child(3) {
   grid-area: img3;
 }
 
-#portfolio .portfolio-grid img:nth-child(4) {
+#portfolio .portfolio-grid div:nth-child(4) {
   grid-area: img4;
 }
 
@@ -232,6 +232,201 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.portfolio-fotos-1 {
+  position: relative;
+}
+
+.portfolio-fotos-1 img {
+  position: absolute;
+  opacity: 0;
+}
+
+.portfolio-fotos-1 img[alt="Fotografia 1.1"] {
+  animation-name: transition-img1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-1 img[alt="Fotografia 1.2"] {
+  animation-name: transition-img2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-1 img[alt="Fotografia 1.3"] {
+  animation-name: transition-img3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-2 {
+  position: relative;
+}
+
+.portfolio-fotos-2 img {
+  position: absolute;
+  opacity: 0;
+}
+
+.portfolio-fotos-2 img[alt="Fotografia 2.1"] {
+  animation-name: transition2-img1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-2 img[alt="Fotografia 2.2"] {
+  animation-name: transition2-img2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-3 {
+  position: relative;
+}
+
+.portfolio-fotos-3 img {
+  position: absolute;
+  opacity: 0;
+}
+
+.portfolio-fotos-3 img[alt="Fotografia 3.1"] {
+  animation-name: transition-img1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-3 img[alt="Fotografia 3.2"] {
+  animation-name: transition-img2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-3 img[alt="Fotografia 3.3"] {
+  animation-name: transition-img3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-4 {
+  position: relative;
+}
+
+.portfolio-fotos-4 img {
+  position: absolute;
+  opacity: 0;
+}
+
+.portfolio-fotos-4 img[alt="Fotografia 4.1"] {
+  animation-name: transition2-img1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.portfolio-fotos-4 img[alt="Fotografia 4.2"] {
+  animation-name: transition2-img2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transition-img1 {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+
+@keyframes transition-img2 {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  63% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+
+@keyframes transition-img3 {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 1;
+  }
+}
+
+@keyframes transition2-img1 {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  47% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes transition2-img2 {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 #clientes {
