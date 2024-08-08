@@ -18,4 +18,17 @@
       @include mbottom-3;
     }
   }
+
+  // responsividade
+  @include screen(tablet) {
+    .contato-conteudo {
+      background-position: -100px;
+    }
+  }
+
+  @include screen(mobile) {
+    &.container {
+      padding: 0;
+    }
+  }
 }

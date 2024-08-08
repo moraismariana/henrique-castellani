@@ -738,11 +738,24 @@ img {
   margin-bottom: 16px;
 }
 
+@media (max-width: 768px) {
+  #contato .contato-conteudo {
+    background-position: -100px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contato.container {
+    padding: 0;
+  }
+}
+
 .footer-bg {
   background-color: #2f2f2f;
 }
 
 .footer {
+  text-align: center;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -758,5 +771,19 @@ img {
 
 .footer ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .footer ul {
+    gap: 24px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer ul {
+    gap: 24px;
+  }
 }
