@@ -1,3 +1,4 @@
+//PORTFOLIO
 const botao = document.querySelector(".button");
 
 function verMais() {
@@ -19,3 +20,19 @@ function verMais() {
 }
 
 botao.addEventListener("click", verMais);
+
+// MENU MOBILE
+function menuShow() {
+  let menuMobile = document.querySelector(".mobile-menu");
+  let background = document.querySelector(
+    ".mobile-menu-bg .background-overlay"
+  );
+  menuMobile.classList.toggle("none");
+  background.classList.toggle("none");
+}
+
+document.querySelectorAll(".mobile-menu a").forEach((link) => {
+  link.addEventListener("click", function () {
+    menuShow();
+  });
+});

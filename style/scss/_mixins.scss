@@ -20,3 +20,20 @@ $spacing-3: 16px;
 @mixin mbottom-3 {
   margin-bottom: $spacing-3;
 }
+
+// RESPONSIVIDADE
+@mixin screen($tela) {
+  @if $tela == "mobile" {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $tela == "tablet" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $tela == "laptop" {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}

@@ -21,15 +21,30 @@
             <header class="header container">
                 <img src="./img/logo.svg" alt="Henrique Castellani">
                 <nav>
-                    <ul>
+                    <ul class="menu-pc">
                         <li><a href="#">Início</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#clientes">Clientes</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
+                    <div class="mobile-menu-icon">
+                        <button onClick="menuShow()"><img src="./img/menu.svg" alt="Menu Mobile"></button>
+                    </div>
                 </nav>
             </header>
+        </div>
+        <div class="mobile-menu-bg">
+            <div class="background-overlay none"></div>
+            <div class="mobile-menu none">
+                <ul class="mobile-menu-lista">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
         </div>
         <main class="intro container">
             <h1>Henrique Castellani</h1>
