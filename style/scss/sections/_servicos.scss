@@ -20,4 +20,29 @@
     bottom: 0;
     right: 24px;
   }
+
+  // responsividade
+  @include screen(tablet) {
+    &.container {
+      padding: 0;
+    }
+    .servicos-grid {
+      gap: 5px;
+    }
+  }
+
+  @include screen(mobile) {
+    .servicos-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 360px);
+    }
+    .servicos-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      &[alt="Modelo2"] {
+        top: 80px;
+      }
+    }
+  }
 }
