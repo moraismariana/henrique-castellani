@@ -47,6 +47,10 @@ img {
   margin-right: auto;
 }
 
+.none {
+  display: none;
+}
+
 .header-bg {
   top: 20px;
   margin-bottom: 20px;
@@ -460,18 +464,22 @@ img {
   margin-bottom: 40px;
 }
 
-#clientes > p {
+#clientes > button {
+  border: none;
+  background-color: #e3e3e3;
+  cursor: pointer;
   font-family: "Allura";
   font-weight: 400;
   font-size: 2.5rem;
   color: #2f2f2f;
   position: relative;
   max-width: fit-content;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
-#clientes > p::after {
+#clientes > button::after {
   content: "";
   position: absolute;
   display: block;
@@ -481,7 +489,8 @@ img {
   bottom: 4px;
 }
 
-.clientes-item {
+.clientes-item,
+.clientes-item-extra {
   background-color: #fafafa;
   height: fit-content;
   padding: 32px;
@@ -489,7 +498,8 @@ img {
   position: relative;
 }
 
-.clientes-item img {
+.clientes-item img,
+.clientes-item-extra img {
   width: 5.625rem;
   position: absolute;
   top: -2.8125rem;
@@ -497,18 +507,21 @@ img {
   transform: translateX(-50%);
 }
 
-.clientes-item p {
+.clientes-item p,
+.clientes-item-extra p {
   font-family: "Figtree";
   font-weight: 400;
   font-size: 1.125rem;
 }
 
-.clientes-item p:nth-child(2) {
+.clientes-item p:nth-child(2),
+.clientes-item-extra p:nth-child(2) {
   margin-top: 29px;
   margin-bottom: 16px;
 }
 
-.clientes-item p:nth-child(3) {
+.clientes-item p:nth-child(3),
+.clientes-item-extra p:nth-child(3) {
   font-weight: 600;
 }
 
