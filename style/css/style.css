@@ -377,6 +377,14 @@ img {
   }
 }
 
+@media (max-width: 480px) {
+  #portfolio .portfolio-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 360px);
+    grid-template-areas: "img1" "img2" "img3" "img4";
+  }
+}
+
 .portfolio-fotos-1 {
   position: relative;
 }
