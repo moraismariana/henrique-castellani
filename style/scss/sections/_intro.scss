@@ -68,6 +68,19 @@
     padding: 12px;
   }
 }
+//RESPONSIVIDADE HEADER
+.header {
+  @include screen(tablet) {
+    nav {
+      .menu-pc {
+        display: none;
+      }
+      .mobile-menu-icon {
+        display: inline-block;
+      }
+    }
+  }
+}
 
 // INTRO
 .intro-bg {
@@ -113,19 +126,5 @@
     bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
-  }
-}
-
-//RESPONSIVIDADE HEADER
-.header {
-  @include screen(tablet) {
-    nav {
-      .menu-pc {
-        display: none;
-      }
-      .mobile-menu-icon {
-        display: inline-block;
-      }
-    }
   }
 }

@@ -64,7 +64,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(40, 40, 40, 0.77);
+  background-color: rgba(75, 75, 75, 0.966);
   mix-blend-mode: multiply;
   z-index: 1;
 }
@@ -113,7 +113,7 @@ img {
   left: 0;
   width: 100%;
   height: 240px;
-  background-color: rgba(40, 40, 40, 0.77);
+  background-color: rgba(75, 75, 75, 0.966);
   mix-blend-mode: multiply;
   z-index: 1;
 }
@@ -130,6 +130,15 @@ img {
 
 .mobile-menu li {
   padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .header nav .menu-pc {
+    display: none;
+  }
+  .header nav .mobile-menu-icon {
+    display: inline-block;
+  }
 }
 
 .intro-bg {
@@ -158,10 +167,34 @@ img {
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+}
+
 .intro h2 {
   font-family: "Allura";
   font-weight: 400;
   font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .intro h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h2 {
+    font-size: 2rem;
+  }
 }
 
 .intro::before {
@@ -188,15 +221,6 @@ img {
   transform: translateX(-50%);
 }
 
-@media (max-width: 768px) {
-  .header nav .menu-pc {
-    display: none;
-  }
-  .header nav .mobile-menu-icon {
-    display: inline-block;
-  }
-}
-
 #sobre {
   text-align: center;
   margin-bottom: 80px;
@@ -209,6 +233,12 @@ img {
   margin-bottom: 40px;
 }
 
+@media (max-width: 480px) {
+  #sobre h2 {
+    font-size: 2.125rem;
+  }
+}
+
 #sobre p {
   font-family: "Figtree";
   font-weight: 400;
@@ -216,6 +246,12 @@ img {
   max-width: 80ch;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 480px) {
+  #sobre p {
+    font-size: 1rem;
+  }
 }
 
 #sobre p:first-of-type {
@@ -232,6 +268,12 @@ img {
   font-size: 2.25rem;
   margin-bottom: 40px;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  #servicos h2 {
+    font-size: 2.125rem;
+  }
 }
 
 #servicos .servicos-grid {
@@ -254,6 +296,18 @@ img {
   right: 24px;
 }
 
+@media (max-width: 768px) {
+  #servicos p {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #servicos p {
+    font-size: 2rem;
+  }
+}
+
 #portfolio {
   margin-bottom: 80px;
 }
@@ -264,6 +318,12 @@ img {
   font-size: 2.25rem;
   margin-bottom: 40px;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  #portfolio h2 {
+    font-size: 2.125rem;
+  }
 }
 
 #portfolio .portfolio-grid {
@@ -515,6 +575,12 @@ img {
   margin-bottom: 40px;
 }
 
+@media (max-width: 480px) {
+  #clientes h2 {
+    font-size: 2.125rem;
+  }
+}
+
 #clientes .clientes-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -535,6 +601,18 @@ img {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  #clientes > button {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #clientes > button {
+    font-size: 2rem;
+  }
 }
 
 #clientes > button::after {
@@ -572,6 +650,13 @@ img {
   font-size: 1.125rem;
 }
 
+@media (max-width: 480px) {
+  .clientes-item p,
+  .clientes-item-extra p {
+    font-size: 1rem;
+  }
+}
+
 .clientes-item p:nth-child(2),
 .clientes-item-extra p:nth-child(2) {
   margin-top: 29px;
@@ -595,6 +680,12 @@ img {
   margin-bottom: 40px;
 }
 
+@media (max-width: 480px) {
+  #contato h2 {
+    font-size: 2.125rem;
+  }
+}
+
 #contato .contato-conteudo {
   background-image: url("../../img/sections/contato.jpg");
   background-size: cover;
@@ -606,6 +697,12 @@ img {
   font-family: "Figtree";
   font-weight: 400;
   font-size: 1.125rem;
+}
+
+@media (max-width: 480px) {
+  #contato .contato-conteudo {
+    font-size: 1rem;
+  }
 }
 
 #contato .contato-conteudo p:nth-child(2) {
