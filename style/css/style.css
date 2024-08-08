@@ -648,6 +648,12 @@ img {
   bottom: 4px;
 }
 
+@media (max-width: 768px) {
+  #clientes .clientes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .clientes-item,
 .clientes-item-extra {
   background-color: #fafafa;
